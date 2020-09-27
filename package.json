@@ -1,0 +1,52 @@
+{
+  "name": "node-hashcash",
+  "version": "1.0.0",
+  "description": "JavaScript hashcash generation, solving and verification for NodeJS or browser",
+  "main": "lib/index.js",
+  "scripts": {
+    "prebuild": "rimraf lib",
+    "build": "tsc",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabriel-pinheiro/node-hashcash.git"
+  },
+  "keywords": [
+    "hashcash",
+    "pow",
+    "proof",
+    "of",
+    "work",
+    "proof",
+    "of",
+    "work"
+  ],
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": "src",
+    "testRegex": ".spec.ts$",
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "testEnvironment": "node"
+  },
+  "author": "Gabriel Pinheiro <gabrielctpinheiro@gmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/gabriel-pinheiro/node-hashcash/issues"
+  },
+  "homepage": "https://github.com/gabriel-pinheiro/node-hashcash#readme",
+  "devDependencies": {
+    "@types/jest": "^26.0.14",
+    "@types/node": "^14.11.2",
+    "jest": "^26.4.2",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^26.4.0",
+    "typescript": "^4.0.3"
+  }
+}
