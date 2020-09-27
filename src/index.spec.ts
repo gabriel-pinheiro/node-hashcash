@@ -46,6 +46,7 @@ describe('NodeHashcash', () => {
         const challenge = nodeHashcash.createChallenge(SECRET, { hardness });
         await nodeHashcash.solveChallenge(challenge, progress => {
             expect(progress).toBeGreaterThan(last);
+            last = progress;
             updates.push(progress);
         });
 
