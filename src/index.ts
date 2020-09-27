@@ -1,5 +1,5 @@
-import * as crypto from 'crypto';
-import { sha512 } from './sha512';
+import * as randomBytes from 'randombytes';
+import { sha512 } from 'js-sha512';
 import { base64Encode, base64Decode } from './utils';
 const sleep = (time: number) => new Promise(r => setTimeout(r, time));
 
@@ -112,7 +112,7 @@ class NodeHashcash {
         }
 
         const bytes = 3 * size / 4;
-        return crypto.randomBytes(bytes).toString('base64');
+        return randomBytes(bytes).toString('base64');
     }
 }
 
