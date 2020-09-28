@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "JavaScript hashcash generation, solving and verification for NodeJS or browser",
   "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "prebuild": "rimraf lib",
     "build": "tsc",
