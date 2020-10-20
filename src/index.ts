@@ -96,7 +96,7 @@ class NodeHashcash {
             const value = `${attempt}:${token}`;
             const hash = sha512(value);
 
-            if(attempt % 512 === 0) {
+            if(attempt % 4e4 === 0) {
                 await sleep(0);
             }
 
